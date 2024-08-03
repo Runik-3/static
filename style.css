@@ -1,0 +1,70 @@
+body {
+  margin: 0px;
+  box-sizing: border-box;
+  color: #202020;
+}
+
+#logo {
+  height: 64px;
+}
+
+h2 {
+  margin: 0;
+  display: inline;
+}
+
+header {
+  padding: 0 24px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo-container {
+  display: flex;
+  align-items: center;
+}
+
+#wordmark {
+  font-size: 2.5rem;
+  background-color: #9E9CEE66;
+  padding: 4px 4px;
+}
+
+#marker-left {
+  transform: translateX(6px) translateY(30px);
+}
+#marker-right {
+  transform: translateX(-6px) translateY(30px);
+}
+
+header a {
+  min-height: min-content;
+}
+
+main {
+  padding: 24px;
+}
+
+#arrow {
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border: 2px #5D5D5D;
+  border-style: solid none none solid;
+  border-radius: 4px 0 0 0;
+  /* This translate is a little wonky because of the below negative margin. */
+  transform: translate(115px, -4px) rotate(45deg);
+}
+#definition-container {
+  height: 144px;
+  border: 2px #5D5D5D solid;
+  border-radius: 4px;
+  padding: 16px;
+  margin-top: -12px;
+}
+
+#phonemic {
+  color: #5d5d5d;
+}
