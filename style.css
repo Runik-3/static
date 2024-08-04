@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
-body {
+      body {
   margin: 0px;
   box-sizing: border-box;
   color: #202020;
@@ -43,17 +43,20 @@ header {
 
 #wordmark {
   font-size: 2.5rem;
-  background-color: #9E9CEE66;
   font-family: 'source serif 4';
   font-weight: 600;
   padding: 4px 4px;
 }
+.wordmark-highlight {
+  margin-left: -12px;
+  background-color: #9E9CEE66;
+}
 
 #marker-left {
-  transform: translateX(6px) translateY(30px);
+  transform: translateX(-6px) translateY(32px);
 }
 #marker-right {
-  transform: translateX(-6px) translateY(30px);
+  transform: translateX(-6px) translateY(32px);
 }
 
 header a {
@@ -62,9 +65,9 @@ header a {
 
 main {
   padding: 24px;
-  height: 2000px;
   position: relative;
   overflow: hidden;
+  min-height: 700px;
 }
 
 #arrow {
@@ -75,7 +78,7 @@ main {
   border-style: solid none none solid;
   border-radius: 4px 0 0 0;
   /* This translate is a little wonky because of the below negative margin. */
-  transform: translate(115px, -4px) rotate(45deg);
+  transform: translate(124px, -4px) rotate(45deg);
 }
 #definition-container {
   border: 2px #5D5D5D solid;
@@ -90,9 +93,8 @@ main {
   color: #5d5d5d;
 }
 
-#download-link {
-  margin: auto;
-  margin-top: 48px;
+.download-link {
+  margin: 4px;
   text-align: center;
   background-color: #202020;
   color: #f6f6f6;
@@ -101,6 +103,10 @@ main {
   width: 128px;
   text-decoration: none;
   border-radius: 4px;
+}
+#cta-link {
+  margin: auto;
+  margin-top: 48px;
 }
 
 #planet1 {
@@ -113,4 +119,12 @@ main {
 #planet2 {
   position: absolute;
   z-index: -1;
+}
+
+/* download */
+#download-container {
+  margin-top: 36px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
