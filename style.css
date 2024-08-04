@@ -78,7 +78,7 @@ main {
   border-style: solid none none solid;
   border-radius: 4px 0 0 0;
   /* This translate is a little wonky because of the below negative margin. */
-  transform: translate(124px, -4px) rotate(45deg);
+  transform: translate(112px, -4px) rotate(45deg);
 }
 #definition-container {
   border: 2px #5D5D5D solid;
