@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Ubuntu:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
-      body {
+body {
   margin: 0px;
   box-sizing: border-box;
   color: #202020;
@@ -22,6 +22,7 @@ h1 {
 h2 {
   margin: 0;
   display: inline;
+  font-weight: 600;
 }
 
 p {
@@ -129,12 +130,7 @@ main {
   z-index: -1;
 }
 
-#gradient-transition{
-  height: 8rem;
-  width: 100%;
-  background: rgb(32,32,32);
-  background: linear-gradient(0deg, rgba(32,32,32,1) 0%, rgba(0,212,255,0) 80%); 
-}
+/** How it works */ 
 
 .expanse {
   background-color: #202020;
@@ -143,7 +139,27 @@ main {
 
 #how-it-works-container {
   display: grid; 
-  grid-template-columns: 1fr 1fr;
+  grid-gap: 3rem;
+  grid-template-rows: 1fr 1fr;
+  padding-top: 3rem;
+}
+
+#how-it-works-list {
+  margin-top: 3rem;
+  padding: 0;
+  list-style: none;
+}
+#how-it-works-list li {
+  display: flex;
+  align-items: start;
+  margin-bottom: 4rem;
+}
+#how-it-works-list li img {
+  margin-right: 1.25rem;
+}
+
+#how-it-works-right {
+  display: flex;
 }
 
 /* download */
@@ -172,6 +188,11 @@ main {
 
   #definition-container {
     margin-bottom: 3rem;
+  }
+
+  #how-it-works-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
   }
 
   #download-container {
