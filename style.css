@@ -114,20 +114,20 @@ main {
 
 #planet-container {
   /** planets are out of dom, so this adds some space */
-  height: 16rem;
+  height: 15rem;
 }
 
 #planet1 {
   position: absolute;
   right: -1.5rem;
   transform: translateY(8rem);
-  z-index: -1;
+  z-index: 2;
 }
 
 #planet2 {
   position: absolute;
   left: 5%;
-  z-index: -1;
+  z-index: 1;
 }
 
 /** How it works */ 
@@ -139,9 +139,9 @@ main {
 
 #how-it-works-container {
   display: grid; 
-  grid-gap: 3rem;
-  grid-template-rows: 1fr 1fr;
-  padding-top: 3rem;
+  grid-template-rows: max-content 1fr;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 #how-it-works-list {
@@ -160,6 +160,21 @@ main {
 
 #how-it-works-right {
   display: flex;
+  justify-content: center;
+}
+#how-it-works-right img {
+  width: 100%;
+  object-fit: contain;
+  border: linear-gradient(212deg, rgba(63,63,63,1) 0%, rgba(42,42,42,1) 100%) solid;
+  border-width: 1.5rem 1.5rem  3.25rem;
+}
+.ereader-border {
+  max-width: 80%;
+  padding: 1.5rem 1.5rem 3.25rem 1.5rem;
+  position: relative;
+  background: linear-gradient(212deg, rgba(63,63,63,1) 0%, rgba(42,42,42,1) 100%);
+  max-width: 24rem;
+  border-radius: 1rem;
 }
 
 /* download */
@@ -193,6 +208,11 @@ main {
   #how-it-works-container {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+    grid-gap: 3rem;
+    font-size: 1.175rem;
+  }
+  #how-it-works-container h2 {
+    font-size: 2rem;
   }
 
   #download-container {
