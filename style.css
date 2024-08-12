@@ -142,7 +142,7 @@ main {
 
 .split-container {
   padding-top: 1rem;
-  padding-bottom: 3rem;
+  padding-bottom: 12rem;
   display: grid; 
   grid-template-rows: max-content 1fr;
 }
@@ -220,7 +220,7 @@ main {
 
   .split-container {
     padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-bottom: 12rem;
     grid-template-columns: 0.75fr 1fr;
     grid-template-rows: 1fr;
     grid-gap: 2rem;
