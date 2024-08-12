@@ -4,6 +4,7 @@ body {
   box-sizing: border-box;
   color: #202020;
   font-family: 'ubuntu';
+  background-color: #f6f6f6;
 }
 
 #logo {
@@ -26,7 +27,7 @@ h2 {
 }
 
 p {
-  line-height: 1.4rem;
+  line-height: 1.6rem;
 }
 
 header {
@@ -76,12 +77,12 @@ main {
 #arrow {
   width: 0.75rem;
   height: 0.75rem;
-  background-color: white;
+  background-color: #f6f6f6;
   border: 2px #5D5D5D;
   border-style: solid none none solid;
   border-radius: 0.25rem 0 0 0;
   /* This translate is a little wonky because of the below negative margin. */
-  transform: translate(112px, -4px) rotate(45deg);
+  transform: translate(112px, -4.45px) rotate(45deg);
 }
 #definition-container {
   border: 2px #5D5D5D solid;
@@ -114,7 +115,7 @@ main {
 
 #planet-container {
   /** planets are out of dom, so this adds some space */
-  height: 15rem;
+  height: 14rem;
 }
 
 #planet1 {
@@ -133,49 +134,53 @@ main {
 /** How it works */ 
 
 .expanse {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   background-color: #202020;
   color: white;
 }
 
-#how-it-works-container {
+.split-container {
+  padding-top: 1rem;
+  padding-bottom: 3rem;
   display: grid; 
   grid-template-rows: max-content 1fr;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
 }
-
-#how-it-works-list {
-  margin-top: 3rem;
-  padding: 0;
-  list-style: none;
+.split-left {
+  margin-bottom: 2rem;
 }
-#how-it-works-list li {
-  display: flex;
-  align-items: start;
-  margin-bottom: 4rem;
-}
-#how-it-works-list li img {
-  margin-right: 1.25rem;
-}
-
-#how-it-works-right {
+.split-right {
   display: flex;
   justify-content: center;
 }
-#how-it-works-right img {
+.split-right img {
   width: 100%;
   object-fit: contain;
   border: linear-gradient(212deg, rgba(63,63,63,1) 0%, rgba(42,42,42,1) 100%) solid;
   border-width: 1.5rem 1.5rem  3.25rem;
 }
-.ereader-border {
-  max-width: 80%;
+#ereader-border {
   padding: 1.5rem 1.5rem 3.25rem 1.5rem;
   position: relative;
   background: linear-gradient(212deg, rgba(63,63,63,1) 0%, rgba(42,42,42,1) 100%);
-  max-width: 24rem;
+  max-width: 20rem;
   border-radius: 1rem;
 }
+
+#how-it-works-list {
+  padding-left: 0;
+  padding-top: 1rem;
+  list-style: none;
+}
+#how-it-works-list li {
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: start;
+}
+#how-it-works-list li img {
+  margin-right: 1.25rem;
+}
+
 
 /* download */
 #download-container {
@@ -205,22 +210,36 @@ main {
     margin-bottom: 3rem;
   }
 
-  #how-it-works-container {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-gap: 3rem;
-    font-size: 1.175rem;
+  .expanse {
+    font-size: 1.1rem;
   }
+
+  #motivation-container h2 {
+    font-size: 2rem;
+  }
+
+  .split-container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    grid-template-columns: 0.75fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 2rem;
+  }
+  .split-left {
+    margin-bottom: 4rem;
+  }
+
   #how-it-works-container h2 {
     font-size: 2rem;
+  }
+
+  #how-it-works-list li {
+    display: flex;
+    align-items: start;
+    margin-bottom: 4rem;
   }
 
   #download-container {
     justify-content: start;
   }
-}
-
-
-@media (min-width: 64rem){
-
 }
