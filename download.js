@@ -25,8 +25,8 @@ applyGithubArtefactLinks()
 
 function getOsLinksFromRelease(release) {
   const mac = release?.assets?.filter(asset => asset?.['name'] === "runik_mac_universal.zip")?.[0]?.['browser_download_url']
-  const linux = release?.assets?.filter(asset => asset?.['name'] === "Runik_Linux")?.[0]?.['browser_download_url']
-  const windows = release?.assets?.filter(asset => asset?.['name'] === "Runik.Core-amd64-installer.exe")?.[0]?.['browser_download_url']
+  const linux = release?.assets?.filter(asset => asset?.['name'] === "runik.flatpak")?.[0]?.['browser_download_url']
+  const windows = release?.assets?.filter(asset => asset?.['name'] === "runik-amd64-installer.exe")?.[0]?.['browser_download_url']
 
   return {
     mac,
