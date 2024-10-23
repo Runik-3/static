@@ -17,7 +17,7 @@ h1, h2 {
 
 h1 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.2rem;
 }
 
 h2 {
@@ -111,12 +111,12 @@ main {
 }
 #cta-link {
   margin: auto;
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 
 #planet-container {
   /** planets are out of dom, so this adds some space */
-  height: 14rem;
+  height: 13rem;
 }
 
 #planet1 {
@@ -180,6 +180,7 @@ main {
   margin-bottom: 3rem;
   display: flex;
   align-items: start;
+  line-height: 1.6rem;
 }
 #how-it-works-list li img {
   margin-right: 1.25rem;
@@ -221,11 +222,11 @@ footer p {
   }
 
   h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
 
   #definition-container {
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
   }
 
   .expanse {
