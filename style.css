@@ -3,12 +3,12 @@ body {
   margin: 0px;
   box-sizing: border-box;
   color: #202020;
-  font-family: 'ubuntu';
+  font-family: 'source serif 4';
   background-color: #f6f6f6;
 }
 
 #logo {
-  height: 4rem;
+  height: 3rem;
 }
 
 h1, h2 {
@@ -16,15 +16,17 @@ h1, h2 {
 }
 
 h1 {
+  display: inline;
+  margin: auto;
   text-align: center;
-  font-size: 2.2rem;
+  font-size: 1.75rem;
+  font-weight: 600
 }
 
 h2 {
-  margin: 0;
-  display: inline;
-  font-weight: 600;
-  font-size: 1.8rem;
+  font-weight: 500;
+  margin: auto;
+  margin-bottom: 1.5rem;
 }
 
 p {
@@ -44,35 +46,12 @@ header {
   align-items: center;
 }
 
-#wordmark {
-  font-size: 2.5rem;
-  font-family: 'source serif 4';
-  font-weight: 600;
-  padding: .25rem;
-}
-.wordmark-highlight {
-  margin-left: -0.75rem;
-  background-color: #9E9CEE66;
-}
-
-#marker-left {
-  transform: translateX(-0.375rem) translateY(2rem);
-}
-#marker-right {
-  transform: translateX(-0.375rem) translateY(2rem);
-}
-
 header a {
   min-height: min-content;
 }
 
 main {
-  position: relative;
-  overflow: hidden;
-}
-
-.content-wrap {
-  padding: 1rem;
+  margin: 1rem;
 }
 
 #arrow {
@@ -94,12 +73,31 @@ main {
   max-width: 20rem;
 }
 
+.section {
+  padding: 9rem 0;
+}
+
+#hero #title {
+  width: 100%;
+  text-align:center;
+  margin-bottom: 1.5rem;
+}
+#hero span {
+  margin-left: .5rem;
+}
+#hero p{
+  text-align: center;
+  max-width: 350px;
+  margin: auto;
+}
 #phonemic {
+  font-size: 1.25rem;
   color: #5d5d5d;
 }
 
 .download-link {
-  margin: .25rem;
+  margin: auto;
+  margin-top: 4rem;
   text-align: center;
   background-color: #202020;
   color: #f6f6f6;
@@ -109,49 +107,22 @@ main {
   text-decoration: none;
   border-radius: .25rem;
 }
-#cta-link {
-  margin: auto;
-  margin-top: 4rem;
-}
 
-#planet-container {
-  /** planets are out of dom, so this adds some space */
-  height: 13rem;
-}
-
-#planet1 {
-  position: absolute;
-  right: -1.5rem;
-  transform: translateY(8rem);
-  z-index: 2;
-}
-
-#planet2 {
-  position: absolute;
-  left: 5%;
-  z-index: 1;
+#motivation-container {
+  text-align: center; 
 }
 
 /** How it works */ 
-
-.expanse {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  background-color: #202020;
-  color: white;
+#how-it-works-container h2 {
+  text-align: center; 
 }
 
 .split-container {
-  padding-top: 1rem;
-  padding-bottom: 7rem;
   display: grid; 
   grid-template-rows: max-content 1fr;
 }
 .split-left {
   margin-bottom: 2rem;
-}
-#stay-immersed {
-  padding-top: 1rem;
 }
 .split-right {
   display: flex;
@@ -166,7 +137,7 @@ main {
 #ereader-border {
   padding: 1.5rem 1.5rem 3.25rem 1.5rem;
   position: relative;
-  background: linear-gradient(212deg, #F4F4EF 0%, #DFDFD4 100%);
+  background: linear-gradient(212deg, #3F3F3F 0%, #2A2A2A 100%);
   max-width: 20rem;
   border-radius: 1rem;
 }
@@ -187,7 +158,6 @@ main {
 }
 
 footer {
-  background-color: #202020;
   height: 80px;
   display: flex;
   flex-direction: column;
@@ -195,7 +165,6 @@ footer {
   align-items: center;
 }
 footer p {
-  color: #d9d9d9;
   font-size: 0.875rem;
   font-style: italic;
   margin: 0;
@@ -215,14 +184,14 @@ footer p {
     padding: 0 1.5rem;
   }
 
-  .content-wrap {
-    padding: 1.5rem;
+  .section {
+    padding: 9rem 0;
     max-width: 64rem;
     margin: auto;
   }
 
   h1 {
-    font-size: 3.5rem;
+    font-size: 2rem;
   }
 
   #definition-container {
@@ -238,14 +207,15 @@ footer p {
   }
 
   .split-container {
-    padding-top: 3rem;
-    padding-bottom: 7rem;
     grid-template-columns: 0.75fr 1fr;
     grid-template-rows: 1fr;
     grid-gap: 2rem;
   }
   .split-left {
     margin-bottom: 4rem;
+  }
+  .split-right {
+    justify-content: right;
   }
 
   #how-it-works-container h2 {
