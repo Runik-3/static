@@ -74,7 +74,7 @@ main {
 }
 
 .section {
-  padding: 9rem 0;
+  padding: 12rem 0;
 }
 
 #hero #title {
@@ -144,17 +144,49 @@ main {
 
 #how-it-works-list {
   padding-left: 0;
-  padding-top: 2rem;
   list-style: none;
-}
-#how-it-works-list li {
-  margin-bottom: 3rem;
-  display: flex;
-  align-items: start;
-  line-height: 1.6rem;
-}
-#how-it-works-list li img {
-  margin-right: 1.25rem;
+  max-width: 32rem;
+  margin: auto;
+
+  li {
+    margin-bottom: 5rem;
+    display: flex;
+    align-items: start;
+    line-height: 1.6rem;
+
+    img {
+      margin-top: .30rem;
+      margin-right: 1.25rem;
+    }
+  }
+
+  .how-it-works-graphic-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem 0 4rem;
+  }
+  #wiki-input {
+    height: 2rem;
+    width: 18rem;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid #d3d3d3;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+  }
+  #convert{
+    border: 1px solid #d3d3d3;
+    border-radius: 8px;
+    min-height: 100px;
+    width: 325px;
+    padding: 1rem; 
+
+    pre {
+      margin: 0;
+    }
+  }
 }
 
 footer {
@@ -163,11 +195,12 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-footer p {
-  font-size: 0.875rem;
-  font-style: italic;
-  margin: 0;
+
+  p {
+    font-size: 0.875rem;
+    font-style: italic;
+    margin: 0;
+  }
 }
 
 /* download */
@@ -193,6 +226,9 @@ footer p {
   h1 {
     font-size: 2rem;
   }
+  h2 {
+    font-size: 1.75rem;
+  }
 
   #definition-container {
     margin-bottom: 2.5rem;
@@ -200,10 +236,6 @@ footer p {
 
   .expanse {
     font-size: 1.1rem;
-  }
-
-  #motivation-container h2 {
-    font-size: 2rem;
   }
 
   .split-container {
@@ -218,10 +250,6 @@ footer p {
     justify-content: right;
   }
 
-  #how-it-works-container h2 {
-    font-size: 2rem;
-  }
-
   #how-it-works-list li {
     display: flex;
     align-items: start;
@@ -230,5 +258,71 @@ footer p {
 
   #download-container {
     justify-content: start;
+  }
+}
+
+/* Loader */
+/* https://loading.io/css */
+
+.lds-ellipsis {
+  color: #5d5d5d;
+}
+.lds-ellipsis,
+.lds-ellipsis div {
+  box-sizing: border-box;
+}
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 104px;
+  height: 80px;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 33.33333px;
+  width: 23.33333px;
+  height: 23.33333px;
+  border-radius: 50%;
+  background: currentColor;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 16px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 48px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 72px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
   }
 }

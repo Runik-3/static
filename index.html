@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="./assets/runik.png">
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>runik</title>
   </head>
   <body>
@@ -39,17 +40,26 @@
           <div id="ereader-border"><img src="./assets/runik-kobo.png" alt="runik running on a kobo"></div>
         </div>
       </div>
-      <div id="how-it-works-container" class="split-container section">
+      <div id="how-it-works-container" class="section">
         <div class="split-left">
           <h2>How it works</h2>
           <ul id="how-it-works-list">
+            <div class="how-it-works-graphic-container">
+              <div id="wiki-input"></div>
+            </div>
             <li><img src="assets/internet.svg" alt="cloud icon">Find a wiki for the book or series you are reading and provide runik the URL.</li>
+            <div class="how-it-works-graphic-container">
+              <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+            </div>
             <li><img src="assets/cogs.svg" alt="cogs icon">Runik processes each wiki page, compiling them into a dictionary unique to your book.</li>
-            <li><img src="assets/device_install.svg" alt="device install icon">Runik converts the dictionary and installs it onto your e-reader device.</li>
+            <div class="how-it-works-graphic-container">
+              <div id="convert">
+                <pre id="convert-text">welcoem</pre>
+              </div>
+            </div>
+            <li><img src="assets/device_install.svg" alt="device install icon">Runik converts the dictionary to the appropriate format and installs it onto your e-reader device.</li>
+            <li><img src="assets/device.svg" alt="device install icon">Kick back and enjoy reading your book with in-text definitions.</li>
           </ul> 
-        </div>
-        <div class="split-right">
-          <img src="./assets/runik_screenshot.png" alt="screenshot of the runik app">
         </div>
       </div>
     </main>
@@ -57,5 +67,6 @@
       <a target="_blank" href="https://github.com/runik-3/"><img src="./assets/gh.svg" alt="github logo"></a>
       <p>runik is open source</p> 
     </footer>
+    <<script src="index.js"></script>
   </body>
 </html>
