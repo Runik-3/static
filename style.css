@@ -54,29 +54,17 @@ main {
   margin: 1rem;
 }
 
-#arrow {
-  width: 0.75rem;
-  height: 0.75rem;
-  background-color: #f6f6f6;
-  border: 2px #5D5D5D;
-  border-style: solid none none solid;
-  border-radius: 0.25rem 0 0 0;
-  /* This translate is a little wonky because of the below negative margin. */
-  transform: translate(112px, -4.45px) rotate(45deg);
-}
-#definition-container {
-  border: 2px #5D5D5D solid;
-  border-radius: 0.25rem;
-  padding: 1rem;
-  margin-top: -0.75rem;
-  margin-bottom: 1rem;
-  max-width: 20rem;
-}
-
 .section {
   padding: 12rem 0;
 }
 
+#hero {
+  /* Accounting for the height of the top bar and padding */
+  height: calc(100vh - 80px - 12rem);
+  max-height: 600px;
+  min-height: 350px;
+  padding: 12rem 0 0;
+}
 #hero #title {
   width: 100%;
   text-align:center;
@@ -90,8 +78,7 @@ main {
   max-width: 350px;
   margin: auto;
 }
-#phonemic {
-  font-size: 1.25rem;
+#phonemic { font-size: 1.25rem;
   color: #5d5d5d;
 }
 
@@ -115,6 +102,7 @@ main {
 /** How it works */ 
 #how-it-works-container h2 {
   text-align: center; 
+  margin-bottom: 4rem;
 }
 
 .split-container {
@@ -149,7 +137,7 @@ main {
   margin: auto;
 
   li {
-    margin-bottom: 5rem;
+    margin-bottom: 7rem;
     display: flex;
     align-items: start;
     line-height: 1.6rem;
@@ -182,6 +170,9 @@ main {
     min-height: 200px;
     width: 325px;
     padding: 1rem; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     pre {
       margin: 0;
@@ -189,13 +180,42 @@ main {
       word-wrap: break-word;
     }
   }
+
+  #arrow {
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: #f6f6f6;
+    border: 2px #d3d3d3;
+    border-style: none solid solid none;
+    border-radius: 0.25rem 0 0 0;
+    /* This translate moves the arrow in place */
+    transform: translate(5.5rem, 10.82rem) rotate(45deg);
+  }
+  #definition-container {
+    border: 2px #d3d3d3 solid;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    min-width: 280px;
+    max-width: 315px;
+
+    h3 {
+      margin: 0 0 0.5rem 0;
+      font-weight: 500;
+    }
+    p {
+      margin: 0;
+      font-size: 0.90rem;
+      line-height: 1.2rem;
+    }
+  }
   #book-text {
     text-indent: 1rem; 
     height: 5rem;
     font-size: 1.25rem;
-    background-image: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+    background-image: linear-gradient(180deg, rgba(0,0,0,1) 20%, rgba(255,255,255,0) 100%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
   }
 }
 
