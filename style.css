@@ -17,7 +17,7 @@ h1, h2 {
 
 h1 {
   display: inline;
-  margin: auto;
+  margin: 0 auto;
   text-align: center;
   font-size: 1.75rem;
   font-weight: 600
@@ -25,7 +25,7 @@ h1 {
 
 h2 {
   font-weight: 500;
-  margin: auto;
+  margin: 0 auto;
   margin-bottom: 1.5rem;
 }
 
@@ -63,7 +63,7 @@ main {
   height: calc(100vh - 80px - 12rem);
   max-height: 600px;
   min-height: 350px;
-  padding: 12rem 0 0;
+  padding: 10rem 0 0;
 }
 #hero #title {
   width: 100%;
@@ -111,6 +111,10 @@ main {
 }
 .split-left {
   margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .split-right {
   display: flex;
@@ -181,6 +185,8 @@ main {
       margin: 0;
       white-space: pre-wrap;
       word-wrap: break-word;
+      word-break:break-all;
+      overflow-wrap: break-word;
     }
   }
 
@@ -286,6 +292,9 @@ footer {
     padding: 0 1.5rem;
   }
 
+  #hero {
+    padding-top: 7rem;
+  }
   .section {
     padding: 9rem 0;
     max-width: 64rem;
