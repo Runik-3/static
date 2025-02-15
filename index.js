@@ -17,7 +17,7 @@ function scrambleProgram() {
   const df = `@Smaug
 Smaug was a fire-drake of the Third Age, considered the last "great" dragon of Middle-earth. He was drawn to the enormous wealth amassed by the Dwarves of the Lonely Mountain during King Thrór's reign.`
   const dictzip = `<w>
-  <p><a name="Test Word" /><b>Test Word</b></p>
+  <p><a name="Smaug" /><b>Smaug</b></p>
     <p>Smaug was a fire-drake of the Third Age, considered the last "great" dragon of Middle-earth. He was drawn to the enormous wealth amassed by the Dwarves of the Lonely Mountain during King Thrór's reign.</p>
 </w>`
 

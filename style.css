@@ -100,7 +100,7 @@ main {
 
 .download-link {
   margin: auto;
-  margin-top: 4rem;
+  margin-top: 2rem;
   text-align: center;
   background-color: #202020;
   color: #f6f6f6;
@@ -214,7 +214,7 @@ main {
     border-style: none solid solid none;
     border-radius: 0.25rem 0 0 0;
     /* This translate moves the arrow in place */
-    transform: translate(5.5rem, 10.82rem) rotate(45deg);
+    transform: translate(5.5rem, 10.77rem) rotate(45deg);
   }
   #definition-container {
     border: 2px #d3d3d3 solid;
