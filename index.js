@@ -12,7 +12,7 @@ handleConvertSectionText()
 function scrambleProgram() {
   const json = `{
   "Word": "Smaug",
-  "Definition": "Smaug was a fire-drake of the Third Age, considered the last "great" dragon of Middle-earth. He was drawn to the enormous wealth amassed by the Dwarves of the Lonely Mountain during King Thrór's reign.",
+  "Definition": "Smaug was a fire-drake of the Third Age, considered the last "great" dragon of Middle-earth. He was drawn to the enormous wealth amassed by the Dwarves of the Lonely Mountain during King Thrór's reign."
 }`
   const df = `@Smaug
 Smaug was a fire-drake of the Third Age, considered the last "great" dragon of Middle-earth. He was drawn to the enormous wealth amassed by the Dwarves of the Lonely Mountain during King Thrór's reign.`
