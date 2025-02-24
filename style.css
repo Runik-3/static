@@ -310,6 +310,7 @@ footer {
 
   #hero {
     padding-top: 7rem;
+    max-height: unset;
   }
   .section {
     padding: 9rem 0;
