@@ -302,6 +302,11 @@ footer {
   }
 }
 
+.disclaimer-text {
+  font-size: 12px;
+  font-style: italic
+}
+
 @media (min-width: 48rem){
   header {
     margin-top: 1.5rem;
