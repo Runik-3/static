@@ -22,12 +22,39 @@
     <main>
       <div id="download-container" class="max-width">
         <h1>Download</h1>
-        <p>Runik is in early development and currently only supports Kindle and Kobo e-readers.</p>
+        <p>Runik is in early development and currently supports Kobo and Kindle e-readers.</p>
         <p class="disclaimer-text">Note: Kindle support requires you to have kindlegen installed, which comes bundled with the Kindle Previewer app</p>
         <div id="download-links-container">
           <a class="link" target="_blank" id="macos" href="https://github.com/runik-3/core/releases/latest/download/runik_mac_universal.zip"><img alt="macos logo" src="./assets/mac.svg" />macOS</a> 
           <a class="link" target="_blank" id="linux" href="https://github.com/runik-3/core/releases/latest/download/runik_linux.flatpak"><img alt="linux logo" src="./assets/linux.svg" />Linux</a> 
           <a class="link" target="_blank" id="windows" href="https://github.com/runik-3/core/releases/latest/download/runik_windows.exe"><img alt="windows logo" src="./assets/windows.svg" />Windows</a> 
+        </div>
+        <div id="faq-container">
+          <h2>FAQ</h2>
+          <details>
+            <summary>Does runik support my e-reader?</summary>
+            <p>Runik currently supports Kobo and Kindle e-readers. If there is a device or format you'd like supported, please open an issue on <a href="https://github.com/Runik-3/core/issues">github</a>.</p>
+          </details>
+          <details>
+            <summary>Why are Kobo dictionaries generated with runik prefixed with "dicthtml-[r]"?</summary>
+            <p>Kobo expects dictionaries to be in the following format "dicthtml-[language-code]", for example, a spanish dictionary called "dicthtml-es" would be displayed by the device as "Espanol". Since runik dictionaries don't follow this language code naming convention, the full dicthtml prefix is displayed. I am looking for way around this, and am hoping to have a fix for version 1.</p>
+          </details>
+          <details>
+            <summary>How does runik handle spoilers?</summary>
+            <p>In short, runik is <i>okay</i> at handling spoilers. By only using the first few sentences of a wiki article, runik dictionaries tend to mostly avoid spoilers that would be found deeper in the article, but there is no guarantee that a generated dictionary doesn't contain spoilers. The quality of a generated dictionary largely depends on the quality of the wiki. Use at your own risk.</p>
+          </details>
+          <details>
+            <summary>Why does my computer warn me when I try to install runik?</summary>
+            <p>Because Runik is in beta and not yet signed with a developer certificate, Windows and macOS will show a warning the first time you try to open it.</p>
+            <p>
+              <strong>On Windows</strong>: Click <em>More info → Run anyway</em> when prompted.<br/>
+              <strong>On macOS</strong>: Right-click the app and choose <em>Open</em>.
+            </p>
+          </details>
+          <details>
+            <summary>I encountered a bug, where can I report it?</summary>
+            <p>You can report bugs by opening a <a href="https://github.com/Runik-3/core/issues">github issue</a>.</p>
+          </details>
         </div>
       </div>
     </main>

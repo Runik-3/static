@@ -74,15 +74,14 @@ main {
     text-align:center;
     margin-bottom: 1.5rem;
   }
-  span {
-    margin-left: .5rem;
-  }
   p{
     text-align: center;
     max-width: 350px;
     margin: auto;
   }
-  #phonemic { font-size: 1.25rem;
+  #phonemic { 
+    margin-left: 0.8rem;
+    font-size: 1.5rem;
     color: #5d5d5d;
   }
   #learn-more {
@@ -302,8 +301,35 @@ footer {
   }
 }
 
+#faq-container {
+  margin: 12rem 0 12rem;
+  text-align:left;
+
+  h2 {
+    text-align: center;
+  }
+
+  details {
+    font-weight: bold;
+    padding: 1rem 0 1rem 0;
+
+    summary {
+      cursor: pointer;
+    }
+
+    &:first-of-type{
+      border-top: 1px #d3d3d3 solid;
+    }
+    border-bottom: 1px #d3d3d3 solid;
+
+    p {
+      font-weight: normal;
+    }
+  } 
+}
+
 .disclaimer-text {
-  font-size: 12px;
+  font-size: 0.8rem;
   font-style: italic
 }
 
