@@ -21,9 +21,9 @@
     </header>
     <main>
       <div id="download-container" class="max-width">
-        <h1>Download</h1>
+        <h1>Download Runik <span>Beta</span></h1>
         <p>Runik is in early development and currently supports Kobo and Kindle e-readers.</p>
-        <p class="disclaimer-text">Note: Kindle support requires you to have kindlegen installed, which comes bundled with the Kindle Previewer app</p>
+        <p class="disclaimer-text">Kindle support requires you to have the Kindle Previewer app installed. See 'FAQ' below for instructions.</p>
         <div id="download-links-container">
           <a class="link" target="_blank" id="macos" href="https://github.com/runik-3/core/releases/latest/download/runik_mac_universal.zip"><img alt="macos logo" src="./assets/mac.svg" />macOS</a> 
           <a class="link" target="_blank" id="linux" href="https://github.com/runik-3/core/releases/latest/download/runik_linux.flatpak"><img alt="linux logo" src="./assets/linux.svg" />Linux</a> 
@@ -34,6 +34,22 @@
           <details>
             <summary>Does runik support my e-reader?</summary>
             <p>Runik currently supports Kobo and Kindle e-readers. If there is a device or format you'd like supported, please open an issue on <a href="https://github.com/Runik-3/core/issues">github</a>.</p>
+          </details>
+          <details>
+            <summary>How do I use runik with my kindle?</summary>
+            <p>For runik to support your kindle device:</p>
+            <ol>
+              <li>Install the <a href="https://kdp.amazon.com/en_US/help/topic/G202131170">Kindle Previewer App</a>.</li>
+              <li>
+                In runik, navigate to the "Settings" tab and enter the full path to the kindlegen executable.<br><br>
+                The default paths for Windows and macOS respecetively are: 
+                  <ul>
+                    <li><code>C:\Users\[your_username]\AppData\Local\Amazon\Kindle codeviewer 3\lib\fc\bin\kindlegen</code></li>
+                    <li><code>/Applications/Kindle codeviewer 3.app/Contents/lib/fc/bin/kindlegen</code></li>
+                  </ul>
+              </li>
+
+            </ol>
           </details>
           <details>
             <summary>Why are Kobo dictionaries generated with runik prefixed with "dicthtml-[r]"?</summary>

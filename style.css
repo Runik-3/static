@@ -24,7 +24,11 @@ h1 {
   margin: 0 auto;
   text-align: center;
   font-size: 1.75rem;
-  font-weight: 600
+  font-weight: 600;
+
+  span {
+    color: #5d5d5d;
+  }
 }
 
 h2 {
@@ -323,7 +327,7 @@ footer {
     }
     border-bottom: 1px #d3d3d3 solid;
 
-    p {
+    p, ol {
       font-weight: normal;
     }
   } 
@@ -335,7 +339,6 @@ footer {
 }
 
 /* 404 */
-
 #notfound-container {
   margin: auto;
   padding-top: 7rem;
