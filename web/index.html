@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="icon" type="image/x-icon" href="../assets/runik.png">
+  <link rel="stylesheet" href="../style.css">
+  <script src="vendor/wasm_exec.js"></script>
+  <title>Runik Web</title>
+</head>
+
+<body>
+  <main>
+    <h3>Runik Web</h3>
+    <input type="text" id="wiki-url" placeholder="Wiki Url">
+    <button id="find-btn" type="button">Find</button>
+  </main>
+
+  <script>
+    // Initialize WASM
+    const go = new Go();
+    WebAssembly.instantiateStreaming(fetch("vendor/builder.wasm"), go.importObject).then((result) => {
+      // The wasm module binds builder functions to JS global context
+      go.run(result.instance);
+    });
+
+    const findBtn = document.getElementById("find-btn")
+    const wikiFindInput = document.getElementById("wiki-url")
+
+    findBtn.addEventListener("click", async () => {
+      if (wikiFindInput.value) {
+        // One of the functions made globally available by builder wasm
+        getWikiInfo(wikiFindInput.value).then(info => {
+          console.log(info)
+        }).catch(console.error)
+      }
+    })
+  </script>
+</body>
+
+</html>
